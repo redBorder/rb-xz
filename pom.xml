@@ -28,17 +28,24 @@
         </license>
     </licenses>
 
+
     <scm>
-        <url>http://git.tukaani.org/?p=xz-java.git</url>
-        <connection>scm:git:http://git.tukaani.org/xz-java.git</connection>
+      <developerConnection>scm:git:git@gitlab.redborder.lan:bigdata/rb-xz.git</developerConnection>
+      <tag>HEAD</tag>
     </scm>
 
-    <developers>
-        <developer>
-            <name>Lasse Collin</name>
-            <email>lasse.collin@tukaani.org</email>
-        </developer>
-    </developers>
+    <distributionManagement>
+      <repository>
+        <id>internal</id>
+        <name>readBorder Internal Repository</name>
+        <url>http://archiva.redborder.lan/repository/internal/</url>
+      </repository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <name>redBorder Snapshot Repository</name>
+        <url>http://archiva.redborder.lan/repository/snapshots/</url>
+      </snapshotRepository>
+    </distributionManagement>
 
     <contributors>
         <contributor>
